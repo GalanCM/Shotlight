@@ -1,0 +1,109 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://Enemy.gd"
+}, {
+"base": "KinematicBody",
+"class": "EnemyShot",
+"language": "GDScript",
+"path": "res://EnemyShot.gd"
+}, {
+"base": "WorldEnvironment",
+"class": "GameWorld",
+"language": "GDScript",
+"path": "res://GameWorld.gd"
+}, {
+"base": "TextureRect",
+"class": "JamGameOver",
+"language": "GDScript",
+"path": "res://Godot JamKit/JamGameOver.gd"
+}, {
+"base": "TextureRect",
+"class": "JamTitleScreen",
+"language": "GDScript",
+"path": "res://Godot JamKit/JamTitleScreen.gd"
+}, {
+"base": "Node",
+"class": "JamTutorial",
+"language": "GDScript",
+"path": "res://Godot JamKit/JamTutorial.gd"
+}, {
+"base": "KinematicBody",
+"class": "LightBulb",
+"language": "GDScript",
+"path": "res://LightBulb.gd"
+}, {
+"base": "KinematicBody",
+"class": "PlayerNode",
+"language": "GDScript",
+"path": "res://Player.gd"
+}, {
+"base": "KinematicBody",
+"class": "ShotLight",
+"language": "GDScript",
+"path": "res://ShotLight.gd"
+} ]
+_global_script_class_icons={
+"Enemy": "",
+"EnemyShot": "",
+"GameWorld": "",
+"JamGameOver": "",
+"JamTitleScreen": "",
+"JamTutorial": "",
+"LightBulb": "",
+"PlayerNode": "",
+"ShotLight": ""
+}
+
+[application]
+
+config/name="Light Tunnel"
+run/main_scene="res://GameWorld.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+JamKit="*res://Godot JamKit/JamKit.tscn"
+
+[input]
+
+PlayerUp={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PlayerDown={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PlayerLeft={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PlayerRight={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ShotFire={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":90,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
