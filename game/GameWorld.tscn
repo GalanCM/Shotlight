@@ -166,8 +166,6 @@ size = 1.0
 near = 0.05
 far = 1000.0
 
-[node name="HUD" parent="." instance=ExtResource( 5 )]
-
 [node name="GIProbe" type="GIProbe" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 250 )
 layers = 1
@@ -181,4 +179,6 @@ normal_bias = 0.0
 interior = true
 compress = false
 data = SubResource( 2 )
+
+[node name="HUD" parent="." instance=ExtResource( 5 )]
 

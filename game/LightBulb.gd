@@ -4,7 +4,7 @@ class_name LightBulb
 func _physics_process(delta: float) -> void:
 	var player : PlayerNode = JamKit.get_unique_node("Player")
 	
-	if player:
+	if is_instance_valid(player):
 		var move_vector : Vector3 = (player.global_transform.origin - global_transform.origin).normalized() * 20
 		var collision = move_and_collide(move_vector * delta * 10)
 		

@@ -2,13 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/softglow.png-48d24782cf8e5a72c7b2d4c9be6482e4.s3tc.stex"
-path.etc2="res://.import/softglow.png-48d24782cf8e5a72c7b2d4c9be6482e4.etc2.stex"
+path.s3tc="res://.import/player_explosion.png-0f5f60e9e5c1975ebf40dbbb216700ee.s3tc.stex"
+path.etc2="res://.import/player_explosion.png-0f5f60e9e5c1975ebf40dbbb216700ee.etc2.stex"
 
 [deps]
 
-source_file="res://softglow.png"
-dest_files=[ "res://.import/softglow.png-48d24782cf8e5a72c7b2d4c9be6482e4.s3tc.stex", "res://.import/softglow.png-48d24782cf8e5a72c7b2d4c9be6482e4.etc2.stex" ]
+source_file="res://player_explosion.png"
+dest_files=[ "res://.import/player_explosion.png-0f5f60e9e5c1975ebf40dbbb216700ee.s3tc.stex", "res://.import/player_explosion.png-0f5f60e9e5c1975ebf40dbbb216700ee.etc2.stex" ]
 
 [params]
 

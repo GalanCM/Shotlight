@@ -23,7 +23,7 @@ func launch() -> void:
 func _physics_process(delta: float) -> void:
 	var player := JamKit.get_unique_node("Player") as PlayerNode
 	
-	if player:
+	if is_instance_valid(player):
 		look_at(player.global_transform.origin, Vector3(0,1,0))
 
 func move() -> void:
@@ -58,3 +58,7 @@ func die() -> void:
 	var lightbulb := preload("res://LightBulb.tscn").instance() as KinematicBody
 	lightbulb.global_transform = global_transform
 	JamKit.get_unique_node("GameWorld").add_child( lightbulb )
+	
+	var explosion := preload("res://EnemyExplosion.tscn").instance() as Spatial
+	explosion.global_transform = global_transform
+	JamKit.get_unique_node("GameWorld").add_child( explosion )

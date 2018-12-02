@@ -3,7 +3,7 @@ extends Camera
 func _process(delta: float) -> void:
 	var player : PlayerNode = JamKit.get_unique_node("Player")
 	
-	if player:
+	if is_instance_valid(player):
 		var direction := player.global_transform.origin - global_transform.origin
 		var distance := direction.length()
 		direction = direction.normalized()

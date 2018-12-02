@@ -1,7 +1,11 @@
 extends KinematicBody
 class_name PlayerNode
 
+signal took_damage(health)
+
 var current_shotlight : ShotLight
+
+var health := 10
 
 func _ready() -> void:
 	JamKit.set_unique_node("Player", self)
@@ -25,4 +29,17 @@ func spawn_shotlight() -> void:
 	add_child( current_shotlight )
 	
 func absorb_lightbulb() -> void:
+	health += 10
 	current_shotlight.increase_glow(0.5)
+	
+func take_hit() -> void:
+	($HitPlayer as AudioStreamPlayer3D).play()
+	health -= 20
+	emit_signal("took_damage", health)
+	
+	if health <= 20:
+		var explosion := preload("res://PlayerExplosion.tscn").instance() as Spatial
+		explosion.global_transform = global_transform
+		JamKit.get_unique_node("GameWorld").add_child( explosion )
+		
+		queue_free()
