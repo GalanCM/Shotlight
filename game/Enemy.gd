@@ -14,20 +14,20 @@ func launch() -> void:
 	add_child(tween)
 	tween.start()
 	
-	$MoveTimer.start()
-	$ShotTimer.start()
+	($MoveTimer as Timer).start()
+	($ShotTimer as Timer).start()
 	
 	yield(tween, "tween_completed")
 	tween.queue_free()
 
 func _physics_process(delta: float) -> void:
-	var player : PlayerNode = JamKit.get_unique_node("Player")
+	var player := JamKit.get_unique_node("Player") as PlayerNode
 	
 	if player:
 		look_at(player.global_transform.origin, Vector3(0,1,0))
 
 func move() -> void:
-	var bounds : Vector2 = (JamKit.get_unique_node("GameWorld") as GameWorld ).bounds
+	var bounds : Vector3 = (JamKit.get_unique_node("GameWorld") as GameWorld ).bounds
 	
 	var goal := Vector3(rand_range(5, 10), rand_range(5, 10), rand_range(20, 200))
 	goal *= Vector3(1 if randi() % 2 else -1, 1 if randi() % 2 else -1, 1 if randi() % 2 else -1)
@@ -35,7 +35,7 @@ func move() -> void:
 		goal.x = -goal.x
 	if goal.y + global_transform.origin.y > bounds.y or goal.y + global_transform.origin.y < bounds.y:
 		goal.y = -goal.y
-	if goal.z + global_transform.origin.z > 500 or goal.z + global_transform.origin.z < 20:
+	if goal.z + global_transform.origin.z > bounds.z or goal.z + global_transform.origin.z < 20:
 		goal.z = -goal.z
 	
 	var tween := Tween.new()

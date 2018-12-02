@@ -9,5 +9,4 @@ func _process(delta: float) -> void:
 		direction = direction.normalized()
 		direction.z = 0
 		
-		print(direction)
-		global_translate(direction * delta * distance * 2)
+		global_translate(direction * delta * distance * 6)

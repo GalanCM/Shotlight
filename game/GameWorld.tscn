@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Tunnel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Environment" id=1]
 
@@ -28,7 +29,7 @@ fog_height_enabled = false
 fog_height_min = 0.0
 fog_height_max = 100.0
 fog_height_curve = 1.0
-tonemap_mode = 0
+tonemap_mode = 2
 tonemap_exposure = 1.0
 tonemap_white = 1.0
 auto_exposure_enabled = false
@@ -64,7 +65,7 @@ dof_blur_near_distance = 2.0
 dof_blur_near_transition = 1.0
 dof_blur_near_amount = 0.1
 dof_blur_near_quality = 1
-glow_enabled = false
+glow_enabled = true
 glow_levels/1 = false
 glow_levels/2 = false
 glow_levels/3 = true
@@ -73,7 +74,7 @@ glow_levels/5 = true
 glow_levels/6 = false
 glow_levels/7 = false
 glow_intensity = 0.8
-glow_strength = 1.0
+glow_strength = 1.34
 glow_bloom = 0.0
 glow_blend_mode = 2
 glow_hdr_threshold = 1.0
@@ -83,6 +84,20 @@ adjustment_enabled = false
 adjustment_brightness = 1.0
 adjustment_contrast = 1.0
 adjustment_saturation = 1.0
+
+[sub_resource type="GIProbeData" id=2]
+
+bounds = AABB( -500, -500, -500, 1000, 1000, 1000 )
+cell_size = 15.625
+to_cell_xform = Transform( 0.064, 0, 0, 0, 0.064, 0, 0, 0, 0.064, 32, 32, 32 )
+dynamic_data = PoolIntArray( 0, 7, 64, 64, 64, 1, 0, 0, 253004416, 1, 267937920, 1, 34, 0, 996839424, 1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 0 )
+dynamic_range = 2
+energy = 10.0
+bias = 1.5
+normal_bias = 0.0
+propagation = 0.7
+interior = true
+compress = false
 
 [node name="GameWorld" type="WorldEnvironment"]
 environment = SubResource( 1 )
@@ -150,4 +165,20 @@ fov = 70.0
 size = 1.0
 near = 0.05
 far = 1000.0
+
+[node name="HUD" parent="." instance=ExtResource( 5 )]
+
+[node name="GIProbe" type="GIProbe" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 250 )
+layers = 1
+subdiv = 0
+extents = Vector3( 500, 500, 500 )
+dynamic_range = 1
+energy = 10.0
+propagation = 0.7
+bias = 1.5
+normal_bias = 0.0
+interior = true
+compress = false
+data = SubResource( 2 )
 

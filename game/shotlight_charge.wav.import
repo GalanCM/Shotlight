@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shotlight_charge.wav-55af47975d3b4893b290e39172d17003.sample"
+
+[deps]
+
+source_file="res://shotlight_charge.wav"
+dest_files=[ "res://.import/shotlight_charge.wav-55af47975d3b4893b290e39172d17003.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

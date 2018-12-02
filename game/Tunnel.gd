@@ -8,7 +8,7 @@ var launch_locations := []
 
 func _ready() -> void:
 	yield(get_tree().create_timer(0.1), "timeout")
-	for i in range(min(4 + count / 4, 15) ):
+	for i in range(min(1 + count / 4, 15) ):
 		var enemy : Enemy = preload("res://Enemy.tscn").instance()
 		add_child( enemy )
 		
@@ -23,7 +23,7 @@ func _ready() -> void:
 		
 		rand_seed(OS.get_unix_time())
 		
-		launch_locations.push_back( rand_range(20, 500) )
+		launch_locations.push_back( rand_range(20, bounds.z) )
 		enemies.push_back(enemy)
 		
 	launch_locations.sort()
@@ -35,10 +35,13 @@ func _process(delta: float) -> void:
 	if !has_spawned and transform.origin.z <= 0:
 		var spawn : Spatial = preload("res://Tunnel.tscn").instance()
 		spawn.global_transform.origin.z = 1050
-		spawn.count += 1
+		spawn.count = count + 1
 		JamKit.get_unique_node("GameWorld").add_child( spawn )
 		
 		has_spawned = true
+	
+	if global_transform.origin.y < -1100:
+		queue_free()
 
 func _physics_process(delta: float) -> void:
 	if !launch_locations.empty() and !enemies.empty() and (!is_instance_valid(enemies[0]) or launch_locations[0] >= enemies[0].global_transform.origin.z):

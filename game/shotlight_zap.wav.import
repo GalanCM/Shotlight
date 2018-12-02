@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shotlight_zap.wav-246a9156d167fbb07934a088efe8e58b.sample"
+
+[deps]
+
+source_file="res://shotlight_zap.wav"
+dest_files=[ "res://.import/shotlight_zap.wav-246a9156d167fbb07934a088efe8e58b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
