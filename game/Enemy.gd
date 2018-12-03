@@ -21,7 +21,7 @@ func launch() -> void:
 	tween.queue_free()
 
 func _physics_process(delta: float) -> void:
-	var player := JamKit.get_unique_node("Player") as PlayerNode
+	var player := JamKit.get_unique_node("Player")
 	
 	if is_instance_valid(player):
 		look_at(player.global_transform.origin, Vector3(0,1,0))
@@ -31,11 +31,11 @@ func move() -> void:
 	
 	var goal := Vector3(rand_range(5, 10), rand_range(5, 10), rand_range(20, 200))
 	goal *= Vector3(1 if randi() % 2 else -1, 1 if randi() % 2 else -1, 1 if randi() % 2 else -1)
-	if goal.x + global_transform.origin.x > bounds.x or goal.x + global_transform.origin.x < bounds.x:
+	if goal.x + global_transform.origin.x > bounds.x or goal.x + global_transform.origin.x < -bounds.x:
 		goal.x = -goal.x
-	if goal.y + global_transform.origin.y > bounds.y or goal.y + global_transform.origin.y < bounds.y:
+	if goal.y + global_transform.origin.y > bounds.y or goal.y + global_transform.origin.y < -bounds.y:
 		goal.y = -goal.y
-	if goal.z + global_transform.origin.z > bounds.z or goal.z + global_transform.origin.z < 20:
+	if goal.z + global_transform.origin.z > bounds.z or goal.z + global_transform.origin.z < 40:
 		goal.z = -goal.z
 	
 	var tween := Tween.new()

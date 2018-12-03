@@ -5,7 +5,7 @@ signal took_damage(health)
 
 var current_shotlight : ShotLight
 
-var health := 10
+var health := 100
 
 func _ready() -> void:
 	JamKit.set_unique_node("Player", self)
@@ -29,17 +29,20 @@ func spawn_shotlight() -> void:
 	add_child( current_shotlight )
 	
 func absorb_lightbulb() -> void:
-	health += 10
+	health += 5
 	current_shotlight.increase_glow(0.5)
 	
 func take_hit() -> void:
 	($HitPlayer as AudioStreamPlayer3D).play()
-	health -= 20
+	health -= 50
 	emit_signal("took_damage", health)
 	
-	if health <= 20:
+	if health <= 0:
 		var explosion := preload("res://PlayerExplosion.tscn").instance() as Spatial
 		explosion.global_transform = global_transform
 		JamKit.get_unique_node("GameWorld").add_child( explosion )
+		
+		var game_over := preload("res://GameOver.tscn").instance() as Control
+		JamKit.get_unique_node("GameWorld").add_child( game_over )
 		
 		queue_free()

@@ -8,7 +8,7 @@ var launch_locations := []
 
 func _ready() -> void:
 	yield(get_tree().create_timer(0.1), "timeout")
-	for i in range(min(1 + count / 4, 15) ):
+	for i in range(min(1 + count / 2, 15) ):
 		var enemy : Enemy = preload("res://Enemy.tscn").instance()
 		add_child( enemy )
 		
@@ -23,7 +23,7 @@ func _ready() -> void:
 		
 		rand_seed(OS.get_unix_time())
 		
-		launch_locations.push_back( rand_range(20, bounds.z) )
+		launch_locations.push_back( rand_range(100, bounds.z - 50) )
 		enemies.push_back(enemy)
 		
 	launch_locations.sort()

@@ -53,8 +53,8 @@ func increase_glow(amount: float) -> void:
 	core.scale.y = min(core.scale.y, 0.3)
 	core.scale.z = min(core.scale.z, 0.3)
 	
-	core.opacity = min (core.opacity + amount * 0.05, 1)
+	core.opacity = min (core.opacity + amount * 0.2, 1)
 	
 	var charge_player : AudioStreamPlayer3D = $ChargePlayer
-	charge_player.unit_db = min( charge_player.unit_db + 10 * amount, 20)
+	charge_player.unit_db = min( charge_player.unit_db + 10 * amount, 10)
 	

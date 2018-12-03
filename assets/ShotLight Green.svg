@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93334"
+   version="1.1"
+   id="svg4771"
+   sodipodi:docname="ShotLight Green.svg"
+   inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <defs
+     id="defs4765">
+    <linearGradient
+       id="linearGradient14093"
+       inkscape:collect="always">
+      <stop
+         id="stop14089"
+         offset="0"
+         style="stop-color:#00ff27;stop-opacity:1" />
+      <stop
+         id="stop14091"
+         offset="1"
+         style="stop-color:#00ff27;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient9254">
+      <stop
+         style="stop-color:#fffc01;stop-opacity:1"
+         offset="0"
+         id="stop9250" />
+      <stop
+         style="stop-color:#ffff01;stop-opacity:0"
+         offset="1"
+         id="stop9252" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9254"
+       id="radialGradient9256"
+       cx="135.46667"
+       cy="161.53331"
+       fx="135.46667"
+       fy="161.53331"
+       r="132.29167"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9254"
+       id="radialGradient9354"
+       gradientUnits="userSpaceOnUse"
+       cx="135.46667"
+       cy="161.53331"
+       fx="135.46667"
+       fy="161.53331"
+       r="132.29167" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient14093"
+       id="radialGradient9364"
+       cx="-424.48441"
+       cy="140.76114"
+       fx="-424.48441"
+       fy="140.76114"
+       r="134.9375"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(559.95107,20.772179)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.25000001"
+     inkscape:cx="-211.22875"
+     inkscape:cy="356.41046"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     inkscape:window-x="81"
+     inkscape:window-y="29"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4768">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-26.06665)"
+     style="display:inline">
+    <circle
+       style="display:inline;opacity:1;fill:#00ff27;fill-opacity:0.50196081;fill-rule:nonzero;stroke:#00ff27;stroke-width:5.29199982;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path9308"
+       cx="135.31548"
+       cy="163.19641"
+       r="54.42857"
+       inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_core.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <circle
+       style="opacity:1;fill:url(#radialGradient9364);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.18563747;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.78431373;paint-order:stroke markers fill"
+       id="path9356"
+       cx="135.46667"
+       cy="161.53331"
+       r="133.34468"
+       inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_glow.png"
+       inkscape:export-xdpi="90.005089"
+       inkscape:export-ydpi="90.005089" />
+    <g
+       id="g14154"
+       inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         id="path9420"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="arc"
+         sodipodi:cx="135.46667"
+         sodipodi:cy="161.53331"
+         sodipodi:rx="132.96178"
+         sodipodi:ry="132.95598"
+         sodipodi:start="0"
+         sodipodi:end="0.12558985"
+         d="m 268.42845,161.53331 a 132.96178,132.95598 0 0 1 -1.04721,16.65406 L 135.46667,161.53331 Z" />
+      <path
+         d="m 3.6956068,143.77966 a 132.96178,132.95598 0 0 1 1.1189162,-6.92015 l 130.652147,24.6738 z"
+         sodipodi:end="3.3282534"
+         sodipodi:start="3.275523"
+         sodipodi:ry="132.95598"
+         sodipodi:rx="132.96178"
+         sodipodi:cy="161.53331"
+         sodipodi:cx="135.46667"
+         sodipodi:type="arc"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="path9424"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-ydpi="90.005089" />
+      <path
+         d="m 167.15191,32.407692 a 132.96178,132.95598 0 0 1 2.80523,0.720776 L 135.46667,161.53331 Z"
+         sodipodi:end="4.9747913"
+         sodipodi:start="4.9530075"
+         sodipodi:ry="132.95598"
+         sodipodi:rx="132.96178"
+         sodipodi:cy="161.53331"
+         sodipodi:cx="135.46667"
+         sodipodi:type="arc"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="path9428"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-ydpi="90.005089" />
+      <path
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         id="path9432"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="arc"
+         sodipodi:cx="135.46667"
+         sodipodi:cy="161.53331"
+         sodipodi:rx="132.96178"
+         sodipodi:ry="132.95598"
+         sodipodi:start="1.6197346"
+         sodipodi:end="1.7090473"
+         d="m 128.96235,294.33011 a 132.96178,132.95598 0 0 1 -11.81927,-1.10942 l 18.32359,-131.68738 z" />
+      <ellipse
+         ry="132.95598"
+         rx="132.96178"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.95726728;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="circle9436"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-ydpi="90.005089"
+         cx="135.46667"
+         cy="161.53331" />
+    </g>
+    <g
+       id="g14147"
+       inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_glow.png"
+         id="path9370"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="arc"
+         sodipodi:cx="135.46667"
+         sodipodi:cy="161.53331"
+         sodipodi:rx="132.96178"
+         sodipodi:ry="132.95598"
+         sodipodi:start="2.537532"
+         sodipodi:end="2.6323359"
+         d="M 26.034346,237.05087 A 132.96178,132.95598 0 0 1 19.376803,226.35313 L 135.46667,161.53331 Z" />
+      <path
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_glow.png"
+         id="path9374"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="arc"
+         sodipodi:cx="135.46667"
+         sodipodi:cy="161.53331"
+         sodipodi:rx="132.96178"
+         sodipodi:ry="132.95598"
+         sodipodi:start="3.880537"
+         sodipodi:end="4.0125471"
+         d="M 37.183994,71.986399 A 132.96178,132.95598 0 0 1 49.826428,59.829427 L 135.46667,161.53331 Z" />
+      <path
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_glow.png"
+         id="path9378"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="arc"
+         sodipodi:cx="135.46667"
+         sodipodi:cy="161.53331"
+         sodipodi:rx="132.96178"
+         sodipodi:ry="132.95598"
+         sodipodi:start="5.6853504"
+         sodipodi:end="5.8832148"
+         d="m 245.36705,86.698476 a 132.96178,132.95598 0 0 1 12.56706,23.062944 l -122.46744,51.77189 z" />
+      <path
+         d="m 215.02756,268.05988 a 132.96178,132.95598 0 0 1 -5.90925,4.16761 L 135.46667,161.53331 Z"
+         sodipodi:end="0.98371803"
+         sodipodi:start="0.92932601"
+         sodipodi:ry="132.95598"
+         sodipodi:rx="132.96178"
+         sodipodi:cy="161.53331"
+         sodipodi:cx="135.46667"
+         sodipodi:type="arc"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:0.43127962;fill-rule:nonzero;stroke:#0000ff;stroke-width:2.11666679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="path9384"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_glow.png"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-ydpi="90.005089" />
+      <ellipse
+         cy="161.53331"
+         cx="135.46667"
+         inkscape:export-ydpi="90.005089"
+         inkscape:export-xdpi="90.005089"
+         inkscape:export-filename="/Users/dev-galan/Dropbox/ShotLight/game/shotlight_burst2.png"
+         id="ellipse14140"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.95726728;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         rx="132.96178"
+         ry="132.95598" />
+    </g>
+  </g>
+</svg>

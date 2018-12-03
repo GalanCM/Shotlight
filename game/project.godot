@@ -53,6 +53,11 @@ _global_script_classes=[ {
 "class": "ShotLight",
 "language": "GDScript",
 "path": "res://ShotLight.gd"
+}, {
+"base": "Label",
+"class": "Tutorial",
+"language": "GDScript",
+"path": "res://Tutorial.gd"
 } ]
 _global_script_class_icons={
 "Enemy": "",
@@ -63,18 +68,20 @@ _global_script_class_icons={
 "JamTutorial": "",
 "LightBulb": "",
 "PlayerNode": "",
-"ShotLight": ""
+"ShotLight": "",
+"Tutorial": ""
 }
 
 [application]
 
 config/name="ShotLight"
-run/main_scene="res://GameWorld.tscn"
+run/main_scene="res://Title.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 JamKit="*res://Godot JamKit/JamKit.tscn"
+Game="*res://Game.gd"
 
 [display]
 
@@ -120,4 +127,5 @@ ShotFire={
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_clear_color=Color( 0.0862745, 0, 0, 1 )
+environment/default_environment="res://GameEnvironment.tres"
