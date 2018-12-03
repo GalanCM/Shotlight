@@ -76,6 +76,7 @@ _global_script_class_icons={
 
 config/name="ShotLight"
 run/main_scene="res://Title.tscn"
+boot_splash/image="res://splash.png"
 config/icon="res://icon.png"
 
 [autoload]
@@ -87,6 +88,7 @@ Game="*res://Game.gd"
 
 window/size/width=1280
 window/size/height=720
+window/size/fullscreen=true
 
 [input]
 
