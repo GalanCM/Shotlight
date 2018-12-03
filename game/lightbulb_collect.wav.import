@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lightbulb_collect.wav-be4d2c3cc1f4a4e547a6757e1570b759.sample"
+
+[deps]
+
+source_file="res://lightbulb_collect.wav"
+dest_files=[ "res://.import/lightbulb_collect.wav-be4d2c3cc1f4a4e547a6757e1570b759.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

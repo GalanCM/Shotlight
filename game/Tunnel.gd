@@ -12,7 +12,10 @@ func _ready() -> void:
 		var enemy : Enemy = preload("res://Enemy.tscn").instance()
 		add_child( enemy )
 		
-		var bounds := (JamKit.get_unique_node("GameWorld") as GameWorld).bounds
+		var game_world := (JamKit.get_unique_node("GameWorld") as GameWorld)
+		if !is_instance_valid(game_world):
+			return
+		var bounds := game_world.bounds
 		var fixed_axis : int = randi() % 2 == 0
 		var directions = Vector2(1 if randi() % 2 else -1, 1 if randi() % 2 else -1)
 		enemy.transform.origin = Vector3(

@@ -12,7 +12,10 @@ func _ready() -> void:
 	spawn_shotlight()
 
 func _physics_process(delta: float) -> void:
-	var bounds : Vector3 = (JamKit.get_unique_node("GameWorld") as GameWorld ).bounds
+	var game_world := (JamKit.get_unique_node("GameWorld") as GameWorld)
+	if !is_instance_valid(game_world):
+		return
+	var bounds := game_world.bounds
 	
 	translation.x = clamp(translation.x, -bounds.x, bounds.x)
 	translation.y = clamp(translation.y, -bounds.y, bounds.y)
@@ -29,6 +32,7 @@ func spawn_shotlight() -> void:
 	add_child( current_shotlight )
 	
 func absorb_lightbulb() -> void:
+	($CollectPlayer as AudioStreamPlayer3D).play()
 	health += 5
 	current_shotlight.increase_glow(0.5)
 	

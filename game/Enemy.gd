@@ -27,7 +27,10 @@ func _physics_process(delta: float) -> void:
 		look_at(player.global_transform.origin, Vector3(0,1,0))
 
 func move() -> void:
-	var bounds : Vector3 = (JamKit.get_unique_node("GameWorld") as GameWorld ).bounds
+	var game_world := (JamKit.get_unique_node("GameWorld") as GameWorld)
+	if !is_instance_valid(game_world):
+		return
+	var bounds := game_world.bounds
 	
 	var goal := Vector3(rand_range(5, 10), rand_range(5, 10), rand_range(20, 200))
 	goal *= Vector3(1 if randi() % 2 else -1, 1 if randi() % 2 else -1, 1 if randi() % 2 else -1)
@@ -37,9 +40,15 @@ func move() -> void:
 		goal.y = -goal.y
 	if goal.z + global_transform.origin.z > bounds.z or goal.z + global_transform.origin.z < 40:
 		goal.z = -goal.z
+		
+	goal = Vector3(
+		clamp(global_transform.origin.x + goal.x, -bounds.x, bounds.x),
+		clamp(global_transform.origin.y + goal.y, -bounds.y, bounds.y),
+		clamp(global_transform.origin.z + goal.z, 40, bounds.z)
+	)
 	
 	var tween := Tween.new()
-	tween.interpolate_property(self, "translation", global_transform.origin, global_transform.origin + goal, 1.0, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
+	tween.interpolate_property(self, "translation", global_transform.origin, goal, 1.0, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 	add_child(tween)
 	tween.start()
 	
