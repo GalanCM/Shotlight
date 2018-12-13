@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "TextureRect",
+"class": "JamGameOver",
+"language": "GDScript",
+"path": "res://JamGameOver.gd"
+}, {
+"base": "TextureRect",
+"class": "JamTitleScreen",
+"language": "GDScript",
+"path": "res://JamTitleScreen.gd"
+}, {
+"base": "Node",
+"class": "JamTutorial",
+"language": "GDScript",
+"path": "res://JamTutorial.gd"
+} ]
+_global_script_class_icons={
+"JamGameOver": "",
+"JamTitleScreen": "",
+"JamTutorial": ""
+}
+
+[application]
+
+config/name="Godot JamKit"
+config/icon="res://icon.png"
+
+[autoload]
+
+JamKit="*res://JamKit.tscn"
+
+[debug]
+
+gdscript/warnings/return_value_discarded=false
+gdscript/warnings/unsafe_property_access=true
+gdscript/warnings/unsafe_method_access=true
+gdscript/warnings/unsafe_cast=true
+gdscript/warnings/unsafe_call_argument=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
